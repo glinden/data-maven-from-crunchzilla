@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Data Maven from Crunchzilla</title>
+    <link rel=icon type="image/png" href=i/favicon.png>
+    <link rel="shortcut icon" href=i/favicon.ico>
+
+    <link rel=stylesheet href=thirdparty/speechbubble.css>
+    <link rel=stylesheet href=datamaven.css>
+
+    <meta property="og:title" content="Data Maven from Crunchzilla" />
+    <meta property="og:image" content="http://www.crunchzilla.com/i/datamaven-icon.png" />
+    <meta property="og:url" content="http://www.crunchzilla.com/data-maven" />
+    <meta property="og:description" content="Learn about statistics with this intuitive game-like tutorial focused on answering questions with data" />
+    <meta name="description" content="Learn about statistics with this intuitive game-like tutorial focused on answering questions with data" />
+  </head>
+
+  <body>
+
+    <noscript>
+	Data Maven from Crunchzilla is a statistics
+	tutorial that emphasizes answering questions with data.
+	You appear to have Javascript disabled.
+	Data Maven from Crunchzilla uses Javascript.  Please enable
+	Javascript if you want to play with Data Maven.
+	Otherwise, Data Maven will not be able to play with you.
+    </noscript>
+    <div class=not-selectable unselectable=on id=tutor>
+      <div id=tutor-avatar unselectable=on><img id=tutor-img unselectable=on src=i/tutor0.png /></div>
+      <div id=tutor-talk unselectable=on>
+	<p class="speech-bubble-blue" unselectable=on id=tutor-message> </p>
+      </div>
+    </div>
+ 
+    <div class="quiz-chart-container not-selectable" id="quiz-chart-container-1" unselectable=on>
+      <div class="quiz-chart-container not-selectable" id="quiz-chart-container-2" unselectable=on>
+	<div class=quiz-chart id=chart> </div>
+	<div class=quiz-chart id=quiz> </div>
+      </div>
+    </div>
+
+    <div class=not-selectable unselectable=on style="overflow: hidden; width: 100%; line-height: 10px;">
+      <div style="float: left; width: 138px;">
+	<span class="button not-selectable" title="Go back one lesson" style="margin-right:6px;" unselectable=on id=back-button>BACK</span>
+	<span id=lesson-number style="display: none;">Lesson 1</span>
+      </div>
+      <div id=lesson-section-div>
+	<span id=lesson-section></span>
+      </div>
+      <div style="float: right;">
+	<span class="button not-selectable" title="Go to next lesson" style="margin-right:4px;" unselectable=on id=next-button>NEXT</span>
+      </div>
+
+    </div>
+    <div style="margin-left: 10px; text-align: center;">
+      <progress id=lesson-progress max=100 value=0 title="0% completed"></progress>
+    </div>
+    <div id=info-links class=not-selectable unselectable=on>
+      <span class=info-link unselectable=on>How to Play</span>
+      |
+      <span class=info-link unselectable=on>Lesson Sections</span>
+      |
+      <span class=info-link unselectable=on>FAQ</span>
+      |
+      <span class=info-link unselectable=on>About</span>
+      |
+      <span class=info-link unselectable=on>Terms of Use</span>
+      |
+      <span class=info-link unselectable=on>Privacy</span>
+      |
+      <span class=info-link unselectable=on>Contact</span>
+      |
+      <span unselectable=on>&copy; 2015</span>
+    </div>
+
+    <div id=how-to-play style="display: none;">
+      <h3>How to Play</h3> 
+      Too many people think statistics is either boring or useless.
+      Data Maven from Crunchzilla helps build an intuition
+      and spark a curiosity for statistics and data. At the end of
+      Data Maven, you'll not only know a bit about statistics, but
+      also maybe even start to think of statistics as fun!
+      <br><br> 
+      It's more of a game than a tutorial.  To play, you answer
+      questions and solve problems. Statistics is your tool, and data
+      provides your answers. Once you have the tools and know where to
+      look, you'll be ready to take on your own questions.
+      <br><br> 
+      It's easy to play.  Follow the instructions and do what
+      Data Maven says.  Click on the words Data Maven is saying or the
+      Next button to go to the next lesson. Click on the Back button
+      to go back to a previous lesson. You can jump to a specific
+      lesson or back to the beginning using the "Lesson Sections"
+      link.
+      <br><br>
+      Data Maven saves what lesson you are on, so feel free
+      to stop at any time and come back later.  As long as you come
+      back on the same browser on the same machine, you'll get back to
+      your lesson.
+      <br><br>
+      Try it out! You'll be surprised by how interesting and easy it can
+      be to answer questions using data and statistics. Have fun!
+      <br><br>
+      <br>
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    <div id=lesson-sections style="display: none;">
+      <h3>Jump to a Lesson Section</h3>
+      <ol id=lesson-sections-list>
+      </ol>
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    <div id=faq style="display: none;">
+      <h3>Frequently Asked Questions</h3>
+      <b>What is this? What is Data Maven from Crunchzilla?</b>
+      <br><br>
+      Data Maven is an interactive tutorial where you explore data and statistics. 
+      <br><br>
+      So many people have tried to
+      learn about statistics, only to get bogged down in probability, theory, and math,
+      without feeling that they were able to do anything with it. Data Maven is
+      an intuitive game-like tutorial where you try answering questions with data and statistics.
+      The focus is on action. You answer questions, look at data, and discover how
+      to use statistics as your tool to do even more.
+      <br><br>
+      <b>Why aren't you telling me all the details about statistics?</b>
+      <br><br> 
+      There are already a lot of tutorials and textbooks out
+      there that teach statistics with technical, in-depth
+      explanations of probability, sampling, confidence intervals,
+      distributions, hypothesis testing, regression, and so on.  If
+      you want that, there are many choices available, many of which
+      are excellent supplements to Data Maven.
+      <br><br>
+      What is hard to find is a tutorial that is fun, immersive, and gets you immediately 
+      working with lots of real data. Data Maven skips a lot of the explanation you 
+      can get elsewhere and instead jumps straight into
+      what you can do with data and statistics.
+      <br><br> By the time you finish Data Maven, you should be curious for
+      more. At the end, there is a list of other resources to go to to
+      learn more about statistics, data analysis, and data science.
+      <br><br>
+      <b>Why doesn't this work perfectly on an iPad (or other mobile device)?</b>
+      <br><br>
+      Data Maven will work and is playable on many mobile devices, but 
+      it isn't designed for mobile. Why not?
+      <br><br>
+      Mostly because mobile screens are so small. It's hard to
+      read a lot on tiny mobile screens, even harder to see
+      detailed charts, and can even be a challenge to accurately
+      select the answer you want in the quizzes.  Because of that,
+      Data Maven is designed to work on mobile, but not optimized
+      for mobile.
+      <br><br>
+      <b>Data is plural, isn't it? Shouldn't you say "data are", not "data is"?</b>
+      <br><br> Data was originally the plural of datum.  Years ago,
+      people did used to say "data are". Nowadays, the word datum is
+      rarely used, and the word data is treated as a mass noun similar
+      to the word information (e.g.  "information is great and, golly
+      gee, data is too").
+      <br><br>The Oxford English Dictionary states that data usually
+      takes a singular verb in current standard English. Most style
+      guides either favor "data is" or say either is acceptable. And,
+      "data are" sounds wrong to most younger people. So,
+      Data Maven from Crunchzilla uses "data is".
+      <br><br>
+      <b>Where can I learn more about programming?</b>
+      <br><br>
+      <a href="http://crunchzilla.com/code-maven">Code Maven</a> is a fun way
+      to learn more about programming and Javascript.
+      There also are already a lot of tutorials and textbooks out on the Web that teach Javascript
+      programming, many of which are excellent supplements to Code Maven.
+      <br><br>
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    <div id=about style="display: none;">
+      <h3>About</h3>
+      Data Maven from Crunchzilla is a combination of a game and tutorial 
+      with a focus on action over explanation.
+      When you work through Data Maven, you dive right into playing
+      with data and statistics.
+      <br><br> 
+      Statistics and data analysis are increasingly important
+      for people working in any field. But many people shy away from statistics,
+      thinking it is too difficult or too boring for them. Data Maven
+      demystifies statistics.
+      <br><br>
+      Data Maven is more of a game than a tutorial. To play,
+      you answer questions. Looking at data provides your answers.
+      Statistics will be your tool, showing you where to look. As you
+      answer questions, you'll discover new questions.
+      <br><br> 
+      You'll learn more about how to answer questions.  As
+      you play with Data Maven, you should start to have an intuition
+      and curiosity for answering questions using data and statistics.
+      <br><br>
+      Statistics and data analysis is like a superpower. When
+      you can use these tools, you can do more, learn more, and know
+      more. By the time you finish Data Maven, you'll find you too can use
+      data analysis and statistics to answer questions you have!
+      <br><br> 
+      Data Maven from Crunchzilla is the fourth interactive
+      tutorial in the <a href="http://crunchzilla.com">Crunchzilla</a> series.
+      It was created by Geeky Ventures in Seattle, WA.
+      <br><br>
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    <div id=terms-of-use style="display: none;">
+      <h3>Terms of Use</h3>
+      "Data Maven" is a website provided by Geeky Ventures.
+      In order to use the Site, you must accept the terms set forth below.
+      If you are a minor, your parent or guardian must accept the terms and
+      full responsibility for your use of the website.  THESE TERMS OF
+      SERVICE CONSTITUTE A BINDING LEGAL AGREEMENT BETWEEN YOU AND GEEKY
+      VENTURES.  BY USING THE WEBSITE, YOU AGREE TO THESE TERMS.
+      <br><br>
+      The website HTML, text, images, audio, video, software or other
+      content that is made available on this website are the property of
+      Geeky Ventures or its content suppliers.  Before you use this content
+      in some way please take care to ensure that you have the relevant
+      rights and permissions.  You are welcome to display on your computer,
+      download, and print pages from this website for personal and educational
+      use only.
+      <br><br>
+      THE WEBSITE IS PROVIDED "AS IS".  Your use of this website is at your
+      own risk.  Geeky Ventures disclaims all warranties, expressed or
+      implied, including without limitation, warranties of merchantability
+      and fitness of a particular purpose.  Geeky Ventures disclaims
+      liability for any direct, indirect, incidental, special,
+      consequential, exemplary, punitive or other damages, or lost profits,
+      that may result directly or indirectly from the use of the
+      website. This includes, without limitation, any damage to computer
+      systems, hardware or software, loss of data, or any other performance
+      failures, any errors, bugs, viruses or other defects that result from,
+      or are associated with the use of this website.
+      <br><br>
+      Geeky Ventures may modify this agreement at any time, and such
+      modifications shall be effective immediately.
+      <br><br>
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    <div id=privacy style="display: none;">
+      <h3>Privacy Policy</h3> 
+
+      Data Maven is extremely protective of privacy.  Data Maven
+      keeps almost no information about people who use the website.
+      <br><br>
+      Data Maven does not require registration.  It does not have
+      your e-mail address.  It does not know who you are.  When you
+      use Data Maven, you are essentially anonymous.
+      <br><br>
+      Data Maven does not use cookies.  If you leave the website and
+      come back, there is a feature that will get you back to the
+      lesson you were on.  That does not use cookies.  It is done
+      using HTML5 Local Storage, which stores data on your machine,
+      not remotely on the webservers.  Data Maven does not even know
+      what lesson you were on or how many lessons people using
+      Data Maven have completed, and it is a bit of a shame that we do
+      not (we love data), but that is how seriously we take privacy.
+      <br><br> 
+      Like nearly all websites, Data Maven has web server logs that
+      may contain the IP address used to access the web server.  That
+      is standard in nearly all webservers and not an attempt at data
+      collection.
+      <br><br>
+      In keeping with standard language in privacy policies,
+      personally identifiable information will not be disclosed to a
+      third party unless required by law and we may update this policy
+      from time to time at our sole discretion.
+      <br><br>
+      We are very protective of your privacy.  We like it that way.	  
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    <div id=contact style="display: none;">
+      <h3>Contact</h3>
+      Data Maven can be reached at datamaven@crunchzilla.com
+      <br><br>
+      Data Maven would love to hear your suggestions for how she can
+      teach better.  Data Maven doesn't like complaints, but you can send
+      them to her too, and she will get very sad.
+      <br><br>
+      Data Maven from Crunchzilla is a product of Geeky Ventures.
+      Geeky Ventures is based in Seattle, WA.
+      <div class="simplemodal-close simplemodal-closex">X</div>
+    </div>
+    
+    <div id=old-browser-warning style="display: none; position: fixed; top: 20px; left: 20px; z-index: 999; background: white; width: 500px; height: 500px; border: 3px solid black; padding: 16px;">
+      <h3>Old Browser Warning</h3>
+      Oh my.  Data Maven does not like your web browser.  Your browser
+      is really old.  You need a new web browser.
+      <br><br> 
+      Data Maven likes <a href="http://google.com/chrome">Chrome</a>
+      and <a href="http://mozilla.com/firefox">Firefox</a>.  You can
+      play with Data Maven if you have those.  Go get them and let's play!
+      <br><br>
+      Data Maven uses modern web features such as SVG and animations
+      for the charts and graphics. Modern browsers support those, but
+      some older browsers such as Internet Explorer 8 on Windows XP and older 
+      mobile devices will not be able to play. You can play if you
+      install Chrome or Firefox or if you use a different computer
+      or device.
+    </div>
+
+    <script src=thirdparty/jquery-1.11.2.min.js></script>
+    <script src=thirdparty/jquery.simplemodal.1.4.4.min.js></script>
+    <script src=datamaven-pre.js></script>
+    <script src=thirdparty/d3.v3.min.js></script>
+    <script src=datamaven-lessons.js></script>
+    <script src=datamaven.js></script>
+
+  </body>
+</html>
